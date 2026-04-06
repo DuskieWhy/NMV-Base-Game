@@ -254,16 +254,15 @@ function tankIntro()
 	camHUD.visible = false;
 	snapCamToPos(dad.x + 280, dad.y + 170, true);
 	
+	var tankman = new Character(dad.x, dad.y, 'tankman-cutscene');
+	stage.add(tankman);
+	
 	switch (songName)
 	{
 		case 'ugh':
 			// dad.alpha = 1;
-			var tankman = new Bopper(10, 330).loadAtlas('cutscenes/Ugh');
-			tankman.addAnimByPrefix('Well', 'TANK TALK 1 P1', 24, false);
-			tankman.addAnimByPrefix('Kill', 'TANK TALK 1 P2', 24, false);
-			tankman.antialiasing = true;
-			add(tankman);
-			tankman.playAnim('Well');
+			
+			tankman.playAnim('ugh1');
 			// tankman.alpha = 0.5;
 			// tankman.anim.pause();
 			
@@ -289,7 +288,7 @@ function tankIntro()
 				camFollow.x -= 550;
 				camFollow.y -= 50;
 				
-				tankman.playAnim('Kill');
+				tankman.playAnim('ugh2');
 				tankman.offset.x += 40;
 				tankman.offset.y += 25;
 				FlxG.sound.play(Paths.sound('killYou'));
@@ -301,12 +300,7 @@ function tankIntro()
 				endScene();
 			});
 		case 'guns':
-			var tankman = new Bopper(10, 330).loadAtlas('cutscenes/Guns');
-			tankman.addAnimByPrefix('tight', 'TANK TALK 2', 24, false);
-			tankman.antialiasing = true;
-			add(tankman);
-			
-			tankman.playAnim('tight');
+			tankman.playAnim('guns');
 			FlxG.sound.play(Paths.sound('tankSong2'));
 			FunkinSound.playMusic(Paths.music('DISTORTO'));
 			
@@ -330,12 +324,6 @@ function tankIntro()
 			gfGroup.alpha = 0.00001;
 			boyfriendGroup.alpha = 0.00001;
 			
-			var tankman = new Bopper(10, 330).loadAtlas('cutscenes/Stress');
-			tankman.addAnimByPrefix('FUCK', 'TANK TALK 3 P1 UNCUT', 24, false);
-			tankman.addAnimByPrefix('pico', 'TANK TALK 3 P2 UNCUT', 24, false);
-			tankman.antialiasing = true;
-			stage.add(tankman);
-			
 			var gfDance:FlxSprite = new FlxSprite(gf.x - 107, gf.y + 140);
 			
 			var gfCutscene:FlxSprite = new FlxSprite(gf.x - 104, gf.y + 122);
@@ -357,7 +345,7 @@ function tankIntro()
 			stage.add(gfCutscene);
 			
 			picoCutscene = new Bopper(gf.x - 849, gf.y - 264).loadAtlas('cutscenes/stressPico');
-			picoCutscene.addAnimByPrefix('anim', 'Pico Badass', 24, false);
+			picoCutscene.addAnimByPrefix('anim', 'PicoAtlas', 24, false);
 			picoCutscene.alpha = 0;
 			stage.add(picoCutscene);
 			
@@ -386,7 +374,7 @@ function tankIntro()
 			
 			FlxTimer.wait(0.1, () -> {
 				stressScene.play();
-				tankman.anim.play('FUCK');
+				tankman.playAnim('stress1');
 			});
 			snapCamToPos(dad.x + 400, dad.y + 170);
 			FlxTween.tween(FlxG.camera, {zoom: 0.9 * 1.2}, 1, {ease: FlxEase.quadInOut});
@@ -431,7 +419,7 @@ function tankIntro()
 			
 			FlxTimer.wait(17.5, zoomBack);
 			FlxTimer.wait(19.5, () -> {
-				tankman.anim.play('pico', true);
+				tankman.playAnim('stress2', true);
 			});
 			FlxTimer.wait(20, () -> {
 				camFollow.setPosition(dad.x + 500, dad.y + 170);

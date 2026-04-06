@@ -1,0 +1,92 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				9,
+				8
+			],
+			"anim": "ugh1",
+			"fps": 24,
+			"name": "TANK TALK 1 P1",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				45,
+				33
+			],
+			"anim": "ugh2",
+			"fps": 24,
+			"name": "TANK TALK 1 P2",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				11,
+				12
+			],
+			"anim": "guns",
+			"fps": 24,
+			"name": "TANK TALK 2",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				99,
+				53
+			],
+			"anim": "stress1",
+			"fps": 24,
+			"name": "TANK TALK 3 P1 UNCUT",
+			"indices": [],
+			"flipX": false
+		},
+		{
+			"loop": false,
+			"flipY": false,
+			"offsets": [
+				27,
+				45
+			],
+			"anim": "stress2",
+			"fps": 24,
+			"name": "TANK TALK 3 P2 UNCUT",
+			"indices": [],
+			"flipX": false
+		}
+	],
+	"no_antialiasing": false,
+	"image": "cutscenes/Ugh, cutscenes/Guns, cutscenes/Stress",
+	"position": [
+		0,
+		240
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"scalableOffsets": false,
+	"gameover_confirm_sound": null,
+	"healthicon": "tankman",
+	"gameover_character": null,
+	"vslice_sustains": false,
+	"flip_x": false,
+	"healthbar_colour": -1973791,
+	"camera_position": [
+		-210,
+		-9
+	],
+	"gameover_loop_sound": null,
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

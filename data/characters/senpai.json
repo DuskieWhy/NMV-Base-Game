@@ -14,8 +14,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				5,
-				37
+				3,
+				6
 			],
 			"anim": "singUP",
 			"fps": 24,
@@ -25,7 +25,7 @@
 		{
 			"loop": false,
 			"offsets": [
-				0,
+				2,
 				0
 			],
 			"anim": "singRIGHT",
@@ -36,7 +36,7 @@
 		{
 			"loop": false,
 			"offsets": [
-				40,
+				5,
 				0
 			],
 			"anim": "singLEFT",
@@ -47,7 +47,7 @@
 		{
 			"loop": false,
 			"offsets": [
-				14,
+				3,
 				0
 			],
 			"anim": "singDOWN",
@@ -59,20 +59,21 @@
 	"no_antialiasing": true,
 	"image": "characters/senpai",
 	"position": [
-		150,
-		360
+		-120,
+		-10
 	],
 	"dance_every": 2,
 	"gameover_intial_sound": null,
-	"scalableOffsets": false,
+	"scalableOffsets": true,
 	"gameover_confirm_sound": null,
 	"healthicon": "senpai-pixel",
 	"gameover_character": null,
+	"vslice_sustains": false,
 	"flip_x": false,
 	"healthbar_colour": -21905,
 	"camera_position": [
-		-190,
-		-330
+		134,
+		15
 	],
 	"gameover_loop_sound": null,
 	"sing_duration": 4,

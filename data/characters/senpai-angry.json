@@ -1,78 +1,82 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				2,
 				0
 			],
-			"loop": false,
+			"fps": 24,
 			"anim": "idle",
-			"fps": 24,
-			"name": "Angry Senpai Idle instance 1",
-			"indices": []
+			"indices": [],
+			"name": "Angry Senpai Idle instance 1"
 		},
 		{
-			"offsets": [
-				5,
-				37
-			],
 			"loop": false,
+			"offsets": [
+				1,
+				6
+			],
+			"fps": 24,
 			"anim": "singUP",
-			"fps": 24,
-			"name": "Angry Senpai UP NOTE instance 1",
-			"indices": []
+			"indices": [],
+			"name": "Angry Senpai UP NOTE instance 1"
 		},
 		{
-			"offsets": [
-				40,
-				0
-			],
 			"loop": false,
+			"offsets": [
+				6,
+				1
+			],
+			"fps": 24,
 			"anim": "singLEFT",
-			"fps": 24,
-			"name": "Angry Senpai LEFT NOTE instance 1",
-			"indices": []
+			"indices": [],
+			"name": "Angry Senpai LEFT NOTE instance 1"
 		},
 		{
+			"loop": false,
 			"offsets": [
-				0,
+				2,
 				0
 			],
-			"loop": false,
+			"fps": 24,
 			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "Angry Senpai RIGHT NOTE instance 1",
-			"indices": []
+			"indices": [],
+			"name": "Angry Senpai RIGHT NOTE instance 1"
 		},
 		{
-			"offsets": [
-				14,
-				0
-			],
 			"loop": false,
-			"anim": "singDOWN",
+			"offsets": [
+				3,
+				1
+			],
 			"fps": 24,
-			"name": "Angry Senpai DOWN NOTE instance 1",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Angry Senpai DOWN NOTE instance 1"
 		}
 	],
 	"no_antialiasing": true,
 	"image": "characters/senpai",
 	"position": [
-		150,
-		360
+		-120,
+		-10
 	],
+	"dance_every": 2,
+	"gameover_intial_sound": null,
+	"scalableOffsets": true,
+	"gameover_confirm_sound": null,
 	"healthicon": "senpai-pixel",
+	"gameover_character": null,
+	"vslice_sustains": false,
 	"flip_x": false,
-	"healthbar_colors": [
-		255,
-		170,
-		111
-	],
+	"healthbar_colour": -21905,
 	"camera_position": [
-		-240,
-		-330
+		146,
+		12
 	],
+	"gameover_loop_sound": null,
 	"sing_duration": 4,
-	"scale": 6
+	"scale": 6,
+	"_editor_isPlayer": false
 }

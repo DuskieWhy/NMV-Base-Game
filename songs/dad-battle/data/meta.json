@@ -1,0 +1,10 @@
+{
+    "songName": "dad-battle",
+    "displayName": "Dadbattle",
+
+    "composers": ["Kawai Sprite"],
+    "charters": ["ninjamuffin99", "MtH"],
+
+    "freeplayColor": "#9271FD",
+    "freeplayIcon": "dad"
+}

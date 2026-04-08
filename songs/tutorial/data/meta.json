@@ -1,0 +1,10 @@
+{
+    "songName": "tutorial",
+    "displayName": "Tutorial",
+
+    "composers": ["Kawai Sprite"],
+    "charters": ["ninjamuffin99", "MtH"],
+
+    "freeplayColor": "#A5004D",
+    "freeplayIcon": "gf"
+}

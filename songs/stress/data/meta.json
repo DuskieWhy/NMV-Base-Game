@@ -1,0 +1,10 @@
+{
+    "songName": "stress",
+    "displayName": "Stress",
+
+    "composers": ["Kawai Sprite"],
+    "charters": ["MtH", "Spazkid", "Hundrec"],
+
+    "freeplayColor": "#F6B604",
+    "freeplayIcon": "tankman"
+}

@@ -1,0 +1,10 @@
+{
+    "songName": "monster",
+    "displayName": "Monster",
+
+    "composers": ["Bassetfilms"],
+    "charters": ["ChaoticGamerCG", "MtH", "Spazkid"],
+
+    "freeplayColor": "#223344",
+    "freeplayIcon": "monster"
+}

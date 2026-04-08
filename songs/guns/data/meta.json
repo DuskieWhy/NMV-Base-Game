@@ -1,0 +1,10 @@
+{
+    "songName": "guns",
+    "displayName": "Guns",
+
+    "composers": ["Kawai Sprite"],
+    "charters": ["MtH"],
+
+    "freeplayColor": "#F6B604",
+    "freeplayIcon": "tankman"
+}

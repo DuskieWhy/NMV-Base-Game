@@ -1,0 +1,10 @@
+{
+    "songName": "pico",
+    "displayName": "Pico",
+
+    "composers": ["Kawai Sprite"],
+    "charters": ["ninjamuffin99", "MtH"],
+
+    "freeplayColor": "#941653",
+    "freeplayIcon": "pico"
+}

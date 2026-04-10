@@ -53,11 +53,11 @@ function onCreatePost()
 	aBot.add(abotSpeaker);
 }
 
-function onSongStart()
-{
-	abotVis.snd = audio.inst;
-	abotVis.initAnalyzer();
-}
+// function onSongStart()
+// {
+// 	abotVis.snd = audio.inst;
+// 	abotVis.initAnalyzer();
+// }
 
 function onDestroy()
 {

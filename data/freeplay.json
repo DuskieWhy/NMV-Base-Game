@@ -2,7 +2,15 @@
     "tabs": [
         {
             "title": "Friday Night Funkin'",
-            "fromWeeks": ["tutorial", "week1", "week1-pico", "week2", "week3", "week4", "week5", "week6", "week7", "weekend1"]
-        }
+            "fromWeeks": ["tutorial", "week1", "week1-picp", "week2", "week3", "week4", "week5", "week6", "week7", "weekend1"]
+        },
+        {
+            "title": "Pico Mixes",
+            "songs": [
+                "Bopeebo (Pico Mix)",
+                "Fresh (Pico Mix)",
+                "DadBattle (Pico Mix)"
+            ]
+        }   
     ]
 }

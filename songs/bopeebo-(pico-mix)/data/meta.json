@@ -1,0 +1,10 @@
+{
+    "songName": "bopeebo-pico",
+    "displayName": "Bopeebo (Pico Mix)",
+
+    "composers": ["That Andy Guy", "Saruky"],
+    "charters": ["fabs", "Spazkid"],
+
+    "freeplayColor": "#9271FD",
+    "freeplayIcon": "dad"
+}

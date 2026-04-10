@@ -18,7 +18,5 @@
 	"startUnlocked": true,
 
 	"hideStoryMode": false,
-	"hideFreeplay": false,
-
-    "difficulties": "easy,normal,hard,erect,nightmare"
+	"hideFreeplay": false
 }

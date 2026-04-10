@@ -6,5 +6,8 @@
     "charters": ["ninjamuffin99", "MtH"],
 
     "freeplayColor": "#9271FD",
-    "freeplayIcon": "dad"
+    "freeplayIcon": "dad",
+
+    "difficulties": ["easy", "normal", "hard", "erect", "nightmare"]
+
 }

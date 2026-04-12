@@ -118,14 +118,15 @@ function onBeatHit()
 	if (ClientPrefs.streamedMusic) speakerBump();
 }
 
+var last = [];
+
 function speakerBump()
 {
-	final initVol = [4, 3, 1, 0, 1, 2, 3];
-	var fuck = -1;
+	last = [];
 	for (i in abotVis.members)
 	{
-		fuck += 1;
-		final choice = initVol[fuck];
+		final choice = FlxG.random.int(1, 4, last);
+		last = [choice];
 		
 		i.animation.curAnim.curFrame = choice;
 		FlxTween.num(choice, 6, Conductor.stepCrotchet / 500,
@@ -155,9 +156,9 @@ function onSectionHit()
 
 function goodNoteHit()
 {
-	if (combo == 50) gf.playAnimForDuration('combo50', 1.2, true);
+	if (combo == 50) gf.playAnimForDuration('combo50', 0.7, true);
 	
-	if (combo == 200) gf.playAnimForDuration('combo200', 1.2, true);
+	if (combo == 200) gf.playAnimForDuration('combo200', 0.7, true);
 }
 
 var readyToKill = false;

@@ -1,15 +1,15 @@
 {
 	"animations": [
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
 			"anim": "danceLeft",
-			"flipX": false,
+			"fps": 24,
+			"name": "Idle0",
 			"indices": [
 				0,
 				1,
@@ -27,18 +27,18 @@
 				13,
 				14
 			],
-			"name": "Idle0"
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
 			"anim": "danceRight",
-			"flipX": false,
+			"fps": 24,
+			"name": "Idle0",
 			"indices": [
 				15,
 				16,
@@ -56,31 +56,31 @@
 				28,
 				29
 			],
-			"name": "Idle0"
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				-120,
 				50
 			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
 			"anim": "combo50",
-			"flipX": false,
+			"fps": 24,
+			"name": "ComboCheer0",
 			"indices": [],
-			"name": "ComboCheer0"
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
 			"anim": "drop70",
-			"flipX": false,
+			"fps": 24,
+			"name": "Laugh0",
 			"indices": [
 				0,
 				1,
@@ -120,18 +120,18 @@
 				10,
 				11
 			],
-			"name": "Laugh0"
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
 			"anim": "laughCutscene",
-			"flipX": false,
+			"fps": 24,
+			"name": "Laugh0",
 			"indices": [
 				0,
 				1,
@@ -171,18 +171,18 @@
 				10,
 				11
 			],
-			"name": "Laugh0"
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				-50,
 				-25
 			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
 			"anim": "combo200",
-			"flipX": false,
+			"fps": 24,
+			"name": "ComboFawn0",
 			"indices": [
 				0,
 				1,
@@ -215,57 +215,44 @@
 				6,
 				6
 			],
-			"name": "ComboFawn0"
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				0,
 				52
 			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
 			"anim": "raiseKnife",
-			"flipX": false,
-			"indices": [],
-			"name": "KnifeRaise0"
-		},
-		{
-			"offsets": [
-				-99,
-				52
-			],
-			"flipY": false,
-			"loop": false,
 			"fps": 24,
-			"anim": "idleKnife",
-			"flipX": false,
+			"name": "KnifeRaise0",
 			"indices": [],
-			"name": "KnifeIdle0"
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				135,
 				52
 			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
 			"anim": "lowerKnife",
-			"flipX": false,
+			"fps": 24,
+			"name": "KnifeLower0",
 			"indices": [],
-			"name": "KnifeLower0"
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
 			"anim": "hairBlowNormal",
-			"flipX": false,
+			"fps": 24,
+			"name": "HairBlow0",
 			"indices": [
 				0,
 				1,
@@ -276,18 +263,18 @@
 				2,
 				3
 			],
-			"name": "HairBlow0"
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				0,
 				0
 			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
 			"anim": "hairFallNormal",
-			"flipX": false,
+			"fps": 24,
+			"name": "HairBlow0",
 			"indices": [
 				0,
 				1,
@@ -307,18 +294,18 @@
 				15,
 				16
 			],
-			"name": "HairBlow0"
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				-79,
 				51
 			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
 			"anim": "hairBlowKnife",
-			"flipX": false,
+			"fps": 24,
+			"name": "HairBlowKnife0",
 			"indices": [
 				0,
 				1,
@@ -329,18 +316,18 @@
 				2,
 				3
 			],
-			"name": "HairBlowKnife0"
+			"flipX": false
 		},
 		{
+			"loop": false,
+			"flipY": false,
 			"offsets": [
 				-79,
 				51
 			],
-			"flipY": false,
-			"loop": false,
-			"fps": 24,
 			"anim": "hairFallKnife",
-			"flipX": false,
+			"fps": 24,
+			"name": "HairBlowKnife0",
 			"indices": [
 				0,
 				1,
@@ -358,7 +345,46 @@
 				13,
 				14
 			],
-			"name": "HairBlowKnife0"
+			"flipX": false
+		},
+		{
+			"offsets": [
+				-99,
+				52
+			],
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9
+			],
+			"fps": 24,
+			"flipX": false,
+			"flipY": false,
+			"anim": "idleKnife",
+			"loop": true,
+			"name": "KnifeIdle0"
 		}
 	],
 	"no_antialiasing": false,

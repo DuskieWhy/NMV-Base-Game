@@ -1,5 +1,6 @@
 import funkin.objects.stageobjects.ABotVis;
 import funkin.backend.Conductor;
+import funkin.utils.SortUtil;
 
 import animate.FlxAnimateFrames;
 import animate.FlxAnimate;
@@ -9,6 +10,17 @@ var pupil:FlxAnimate;
 var abotVis:ABotVis;
 var abot:FlxSpriteGroup;
 var started = false;
+
+function makeAdjustShader(_brightness, _hue, _contrast, _saturation)
+{
+	var shader = newShader('adjustColor');
+	shader.setFloat('brightness', _brightness);
+	shader.setFloat('hue', _hue);
+	shader.setFloat('contrast', _contrast);
+	shader.setFloat('saturation', _saturation);
+	
+	return shader;
+}
 
 function onCreatePost()
 {
@@ -36,17 +48,31 @@ function onCreatePost()
 	abotSpeaker.anim.addBySymbol('sys', 'Abot System', 24, false);
 	abotSpeaker.anim.play('sys');
 	abotSpeaker.antialiasing = true;
+	abotSpeaker.useRenderTexture = true;
 	
 	abotVis = new ABotVis(audio.inst, false);
 	abotVis.x += 30;
 	abotVis.y += 35;
 	
-	aBot.setPosition(gf.x + 25, gf.y + 365);
+	aBot.setPosition(gf.x + 275, gf.y + 480);
 	aBot.zIndex = gfGroup.zIndex - 1;
 	// add(aBot);
-	stage.add(aBot);
-	refreshZ(stage);
+	// stage.add(aBot);
+	gfGroup.add(aBot);
 	
+	aBot.zIndex = 0;
+	gf.zIndex = 1;
+	
+	gfGroup.sort(SortUtil.sortByZ);
+	
+	var adjust = makeAdjustShader(-40, -20, -40, -25);
+	var vizAdjust = makeAdjustShader(-12, -30, 0, -10);
+	
+	for (spr in [pupil, abotSpeaker, stereoBG, eyeWhites])
+		spr.shader = adjust;
+	for (spr in abotVis.members)
+		spr.shader = vizAdjust;
+		
 	aBot.add(eyeWhites);
 	aBot.add(stereoBG);
 	aBot.add(pupil);
@@ -118,14 +144,15 @@ function onBeatHit()
 	if (ClientPrefs.streamedMusic) speakerBump();
 }
 
+var last = [];
+
 function speakerBump()
 {
-	final initVol = [4, 3, 1, 0, 1, 2, 3];
-	var fuck = -1;
+	last = [];
 	for (i in abotVis.members)
 	{
-		fuck += 1;
-		final choice = initVol[fuck];
+		final choice = FlxG.random.int(0, 4, last);
+		last = [choice];
 		
 		i.animation.curAnim.curFrame = choice;
 		FlxTween.num(choice, 6, Conductor.stepCrotchet / 500,
@@ -150,33 +177,5 @@ function onSectionHit()
 			if (curSection > 0) prevSec = PlayState.SONG.notes[curSection - 1];
 			if (sec.mustHitSection != prevSec.mustHitSection) pupil.anim.play('lookin ' + (sec.mustHitSection ? 'right' : 'left'));
 		}
-	}
-}
-
-function goodNoteHit()
-{
-	if (combo == 50) gf.playAnimForDuration('combo50', 1.2, true);
-	
-	if (combo == 200) gf.playAnimForDuration('combo200', 1.2, true);
-}
-
-var readyToKill = false;
-
-function onUpdatePost()
-{
-	if (health <= 0.6 && !readyToKill)
-	{
-		gf.stunned = true;
-		readyToKill = true;
-		gf.playAnim('raiseKnife', true);
-		FlxTimer.wait(0.36, () -> {
-			gf.playAnim('idleKnife', true);
-		});
-	}
-	else if (health > 0.6 && readyToKill)
-	{
-		gf.stunned = false;
-		readyToKill = false;
-		gf.playAnimForDuration('lowerKnife', 0.3, true);
 	}
 }

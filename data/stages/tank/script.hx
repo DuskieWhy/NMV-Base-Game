@@ -289,8 +289,6 @@ function tankIntro()
 				camFollow.y -= 50;
 				
 				tankman.playAnim('ugh2');
-				tankman.offset.x += 40;
-				tankman.offset.y += 25;
 				FlxG.sound.play(Paths.sound('killYou'));
 			});
 			
